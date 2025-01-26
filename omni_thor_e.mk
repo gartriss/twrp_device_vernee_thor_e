@@ -15,7 +15,7 @@
 LOCAL_PATH := device/vernee/thor_e
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init.recovery.mt6753.rc:root/init.recovery.mt6753.rc
+    $(LOCAL_PATH)/init.recovery.mt6735.rc:root/init.recovery.mt6735.rc
 
 # Necessary to mount a PC
 $(call inherit-product, build/target/product/full.mk)
