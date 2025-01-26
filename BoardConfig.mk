@@ -82,6 +82,13 @@ BOARD_USES_MMCUTILS := true
 BOARD_FLASH_BLOCK_SIZE := 0
 BOARD_CHARGER_SHOW_PERCENTAGE := true
 
+# Encryption
+# TW_INCLUDE_CRYPTO := true
+# TW_CRYPTO_FS_TYPE := "f2fs"
+# TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/mtk-msdc.0/by-name/userdata"
+# TW_CRYPTO_MNT_POINT := "/data"
+# TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,inline_data,inline_xattr,data=ordered"
+
 # TWRP
 HAVE_SELINUX := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
@@ -105,13 +112,9 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TW_DEFAULT_LANGUAGE := en
 TW_EXCLUDE_SUPERSU := true
-TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_CRYPTO_OLD := true
-BOARD_NEEDS_VENDORIMAGE_SYMLINK := false
-TARGET_USES_EXFAT := true
-TARGET_USES_NTFS := true
 TW_USE_TOOLBOX := true
 TW_DEVICE_VERSION := GartrissCooking
 
 # Fstab
 PRODUCT_COPY_FILES += device/vernee/thor_e/twrp.fstab:recovery/root/etc/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/vernee/thor_e/twrp.fstab
