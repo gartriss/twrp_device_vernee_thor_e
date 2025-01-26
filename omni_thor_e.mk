@@ -13,6 +13,7 @@
 #
 
 LOCAL_PATH := device/vernee/thor_e
+$(call inherit-product, vendor/omni/config/common.mk)
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.recovery.mt6735.rc:root/init.recovery.mt6735.rc
