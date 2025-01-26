@@ -1,6 +1,4 @@
 #
-# Copyright (C) 2016 ShevT
-#
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -14,7 +12,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/meizu/m2note
+LOCAL_PATH := device/vernee/thor_e
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.recovery.mt6753.rc:root/init.recovery.mt6753.rc
