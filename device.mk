@@ -1,0 +1,1 @@
+LOCAL_PATH := device/vernee/thor_e
