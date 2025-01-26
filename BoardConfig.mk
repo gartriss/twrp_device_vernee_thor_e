@@ -116,5 +116,4 @@ TW_USE_TOOLBOX := true
 TW_DEVICE_VERSION := GartrissCooking
 
 # Fstab
-PRODUCT_COPY_FILES += device/vernee/thor_e/twrp.fstab:recovery/root/etc/twrp.fstab
 TARGET_RECOVERY_FSTAB := device/vernee/thor_e/twrp.fstab
