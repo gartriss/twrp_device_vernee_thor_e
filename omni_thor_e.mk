@@ -18,9 +18,6 @@ $(call inherit-product, vendor/omni/config/common.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.recovery.mt6735.rc:root/init.recovery.mt6735.rc
 
-# Necessary to mount a PC
-$(call inherit-product, build/target/product/full.mk)
-
 # Release name
 PRODUCT_RELEASE_NAME := thor_e
 
