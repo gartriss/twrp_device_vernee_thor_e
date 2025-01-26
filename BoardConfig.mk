@@ -99,7 +99,6 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/f_mass_storage/lun/fil
 TW_BRIGHTNESS_PATH := /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness
 TW_CUSTOM_CPU_TEMP_PATH := /sys/class/thermal/thermal_zone1/temp
 TW_MTP_DEVICE := /dev/mtp_usb
-TW_NO_BATT_PERCENT := true
 
 # Misc
 TW_SCREEN_BLANK_ON_BOOT := true
@@ -112,6 +111,7 @@ BOARD_NEEDS_VENDORIMAGE_SYMLINK := false
 TARGET_USES_EXFAT := true
 TARGET_USES_NTFS := true
 TW_USE_TOOLBOX := true
+TW_DEVICE_VERSION := GartrissCooking
 
 # Fstab
 PRODUCT_COPY_FILES += device/vernee/thor_e/twrp.fstab:recovery/root/etc/twrp.fstab
