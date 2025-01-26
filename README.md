@@ -1,1 +1,2 @@
-# twrp_device_vernee_thor_e
+# TWRP device tree for Vernee Thor E (MT6753)
+
