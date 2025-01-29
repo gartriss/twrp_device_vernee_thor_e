@@ -83,11 +83,11 @@ BOARD_FLASH_BLOCK_SIZE := 0
 BOARD_CHARGER_SHOW_PERCENTAGE := true
 
 # Encryption
-# TW_INCLUDE_CRYPTO := true
-# TW_CRYPTO_FS_TYPE := "f2fs"
-# TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/mtk-msdc.0/by-name/userdata"
-# TW_CRYPTO_MNT_POINT := "/data"
-# TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,inline_data,inline_xattr,data=ordered"
+TW_INCLUDE_CRYPTO := true
+TW_CRYPTO_FS_TYPE := "f2fs"
+TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/mtk-msdc.0/by-name/userdata"
+TW_CRYPTO_MNT_POINT := "/data"
+TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,inline_data,inline_xattr,data=ordered"
 
 # TWRP
 HAVE_SELINUX := true
