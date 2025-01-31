@@ -25,20 +25,16 @@ TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := generic
+
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv7-a-neon
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
-TARGET_RECOVERY_QCOM_RTC_FIX := true
-ENABLE_CPUSETS := true
-ENABLE_SCHEDBOOST := true
-ARCH_ARM_HAVE_NEON := true
-ARCH_ARM_HAVE_VFP := true
-ARCH_ARM_HAVE_TLS_REGISTER := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := mt6753
+TARGET_NO_BOOTLOADER := true
 
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -80,7 +76,7 @@ BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_RECOVERY_SWIPE := true
 BOARD_USES_MMCUTILS := true
 BOARD_FLASH_BLOCK_SIZE := 0
-BOARD_CHARGER_SHOW_PERCENTAGE := true
+BOARD_CHARGER_SHOW_PERCENTAGE := false
 
 # Encryption
 TW_INCLUDE_CRYPTO := true
@@ -102,16 +98,16 @@ TW_NO_REBOOT_BOOTLOADER := false
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 80
 TW_INPUT_BLACKLIST := "hbtp_vm"
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/f_mass_storage/lun/file
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun/file
 TW_BRIGHTNESS_PATH := /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness
 TW_CUSTOM_CPU_TEMP_PATH := /sys/class/thermal/thermal_zone1/temp
-TW_MTP_DEVICE := /dev/mtp_usb
 
 # Misc
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TW_DEFAULT_LANGUAGE := en
 TW_EXCLUDE_SUPERSU := true
+TW_EXCLUDE_TWRPAPP := true
 TW_USE_TOOLBOX := true
 TW_DEVICE_VERSION := GartrissCooking
 
