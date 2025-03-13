@@ -3,6 +3,6 @@ Latest Working TWRP: https://github.com/gartriss/Action-Recovery-Builder/release
 
 Bugs: Encrypted /data (can't decrypt), broken MTP, can't boot to system.
 
-TWRP Device tree for Vernee Thor E mt6753
+TWRP Device tree for Vernee Thor E mt6753 (without /custom)
 Android 7 arm64
 
