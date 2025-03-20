@@ -99,11 +99,10 @@ TW_CUSTOM_CPU_TEMP_PATH := /sys/class/thermal/thermal_zone1/temp
 
 # Misc
 TW_SCREEN_BLANK_ON_BOOT := true
-TW_DEFAULT_LANGUAGE := en
+TW_DEFAULT_LANGUAGE := ru
 TW_EXCLUDE_SUPERSU := true
-TW_EXCLUDE_TWRPAPP := true
 TW_USE_TOOLBOX := true
-TW_DEVICE_VERSION := GartrissCooking
+TW_DEVICE_VERSION := GartrissBuilds
 
 # Fstab
 TARGET_RECOVERY_FSTAB := device/vernee/thor_e/twrp.fstab
